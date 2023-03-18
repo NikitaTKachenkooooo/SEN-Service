@@ -1,0 +1,9 @@
+
+<!-- Hero Animation -->
+<svg width="0" height="0" class="hidden">
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 576" id="Animation HERO" >
+    <circle cx="288.274" cy="288.056" r="270" stroke="#ED5226" stroke-width="4" stroke-miterlimit="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="94 94"></circle>
+    <circle cx="288" cy="287.782" r="240.493" transform="rotate(135 288 287.782)" stroke="#ED5226" stroke-width="4" stroke-miterlimit="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="39 39"></circle>
+    <circle cx="287.774" cy="288.556" r="210" stroke="#ED5226" stroke-width="4" stroke-miterlimit="1" stroke-linecap="round" stroke-dasharray="75 75"></circle>
+    </symbol>
+</svg>
