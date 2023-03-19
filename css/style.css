@@ -49,6 +49,7 @@ body {
 .header {
     background-color: var(--color-white);
     border-bottom:2px solid #FFC428 ;
+    z-index: 2;
 }
 
 
@@ -163,16 +164,66 @@ body {
     border-radius: 34px;
     padding: 12px 36px;
     background-color: var(--color-white);
-    transition-duration: 500ms;
+    transition: 500ms;
     font-family: Comfortaa;
     list-style-type: none;
-    transition: 0.5s;
     overflow: hidden;
     position: relative;
     z-index: 1;
+    margin: 1px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));;
 }
 
+.header-btn-link {
+    text-decoration: none;      
+    color: var(--font-color--1);
+    width: 195px;
+    letter-spacing: 0.01em;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.08;
+
+}
+
+.header-btn span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--font-color-3);
+    transform: translateY(150%);
+    border-radius: 50px;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.header-btn:hover {
+    cursor: pointer;
+    border: 2px solid var(--font-color-3);
+}
+
+.header-btn:hover span {
+    transform: translateY(0) scale(2);
+}
+
+.header-btn span:nth-child(1) {
+    --n: 1;
+}
+
+.header-btn span:nth-child(2) {
+    --n: 2;
+}
+
+.header-btn span:nth-child(3) {
+    --n: 3;
+}
+
+.header-btn span:nth-child(4) {
+    --n: 4;
+}
 /* header Main End */
 
 /* Hero Section Start */
@@ -213,12 +264,14 @@ body {
 }
 
 .hero-title {
-    font-size: 96px;
+    font-size: 92px;
     line-height: 1;
     margin-bottom: 36px;
     font-weight: 700;
     letter-spacing: 0.04em;
     color: var(--font-color-3);
+    width: 716px;
+    margin-top: 80px;
 }
 
 .logo-color {
@@ -242,30 +295,75 @@ body {
     color: var(--font-color--1);
     border: 2px solid #ED5226;
     border-radius: 34px;
-    padding: 19px 35px;
+    padding: 19px 37px;
     background-color: var(--color-white);
-    margin-top: 51px;
+    transition: 500ms;
     font-family: Comfortaa;
-    transition-duration: 0.5s;
-    transition: 0.5s;
+    list-style-type: none;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    margin: 1px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     width: 300px;
     height: 56px;
-    list-style-type: none;
-    margin-bottom: 143px;
+    margin-top: 32px;
+    margin-bottom: 183px;
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
-    border: 2px solid #FFC428;
-    background-color: #FFC428;
-    transition-duration: 0.5s;
+.hero-btn-link {
+    text-decoration: none;
+    color: var(--font-color--1);
+    letter-spacing: 0.01em;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+
+
 }
 
-.header-btn:hover,
-.header-btn:focus{
-    border: 2px solid #FFC428;
-    background-color: #FFC428;
-    transition-duration: 0.5s;
+.hero-btn span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--font-color-3);
+    transform: translateY(150%);
+    border-radius: 50px;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.hero-btn:hover {
+    cursor: pointer;
+    border: 2px solid var(--font-color-3);
+}
+
+.hero-btn:hover span {
+    transform: translateY(0) scale(2);
+}
+
+.hero-btn span:nth-child(1) {
+    --n: 1;
+}
+
+.hero-btn span:nth-child(2) {
+    --n: 2;
+}
+
+.hero-btn span:nth-child(3) {
+    --n: 3;
+}
+
+.hero-btn span:nth-child(4) {
+    --n: 4;
 }
 
 
@@ -280,6 +378,68 @@ body {
 
 
 .hero-container {}
+
+.hero-animation-container {
+}
+
+.hero-svg-animation {}
+
+.circle1 {
+    animation: myAnim 6s infinite linear;
+    transform-origin: 50% 50%;
+}
+
+@keyframes myAnim {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.circle2 {
+    animation: myAnim2 5s infinite linear alternate-reverse;
+    transform-origin: 50% 50%;
+}
+
+
+@keyframes color_change {
+    from {
+        stroke:#ED5226;
+    }
+
+    to {
+        stroke:var(--font-color-3);
+    }
+}
+
+@keyframes myAnim2 {
+
+    from {
+        stroke: #ED5226;
+    }
+    to {
+        transform: rotate(360deg);
+        stroke: #FFC428;
+    }
+}
+
+.circle3 {
+    animation: myAnim3 6s infinite linear;
+    transform-origin: 50% 50%;
+}
+
+@keyframes myAnim3 {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.hero-svg-icon {
+    
+}
+
+
+
+
 
 /* Hero Section End */
 
