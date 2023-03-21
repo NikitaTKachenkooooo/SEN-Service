@@ -74,10 +74,10 @@
                     </ul>
                 </div>
                 <div class="hero-animation-container">
-                <svg width="576" height="577" viewBox="0 0 576 577" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="575px" height="575px" viewBox="0 0 575 575" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle class="circle1" cx="288.057" cy="288.544" r="235.5" stroke="#ED5226" stroke-width="4" stroke-miterlimit="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="94 94"/>
-                    <circle class="circle2" cx="287.782" cy="288.271" r="203.493" stroke="#ED5226" stroke-width="4" stroke-miterlimit="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="39 39"/>
-                    <circle class="circle3" cx="287.557" cy="289.044" r="177" stroke="#ED5226" stroke-width="4" stroke-miterlimit="1" stroke-linecap="round" stroke-dasharray="75 75"/>
+                    <circle class="circle2" cx="287.782" cy="288.271" r="203.493" stroke="#FFC428" stroke-width="4" stroke-miterlimit="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="39 35"/>
+                    <ellipse class="circle3" cx="288" cy="288" rx="173" ry="172" stroke="#ED5226" stroke-width="4" stroke-miterlimit="1" stroke-linecap="round" stroke-dasharray="69 65"/>
                     <path d="M238.6 241.935H336.45M360.912 267.565V290.975C360.912 295.169 357.51 298.569 353.312 298.569H333.6M288 298.893H238.579C235.431 298.894 232.88 301.444 232.88 304.589L232.9 306.486M204.4 267.565H227.2C233.496 267.565 238.6 262.465 238.6 256.174V233.391C238.6 227.1 233.496 222 227.2 222H204.4C198.104 222 193 227.1 193 233.391V256.174C193 262.465 198.104 267.565 204.4 267.565ZM348.8 267.565H371.6C377.896 267.565 383 262.465 383 256.174V233.391C383 227.1 377.896 222 371.6 222H348.8C342.504 222 337.4 227.1 337.4 233.391V256.174C337.4 262.465 342.504 267.565 348.8 267.565ZM299.4 320.725H322.2C328.496 320.725 333.6 315.625 333.6 309.333V297.942V286.551C333.6 280.259 328.496 275.159 322.2 275.159H299.4C293.104 275.159 288 280.259 288 286.551V309.333C288 315.625 293.104 320.725 299.4 320.725ZM221.5 353H244.3C250.596 353 255.7 347.9 255.7 341.609V318.826C255.7 312.535 250.596 307.435 244.3 307.435H221.5C215.204 307.435 210.1 312.535 210.1 318.826V341.609C210.1 347.9 215.204 353 221.5 353Z" stroke="#FFC428" stroke-width="6" stroke-linecap="round"/>
                 </svg>
                 </div>
@@ -85,27 +85,29 @@
         </div>
     </section>
     <section class="our-services" id="services">
-        <div class="container">
+        <div class="container-services">
             <div class="our-services-block">
-                <h2 class="our-title">Наші послуги</h2>
+                <div class="our-services-title-block">
+                    <h2 class="our-title">Наші послуги</h2>
+                </div>
                 <ul class="services-list">
                     <li class="services-item">
-                        <a href="" class="services-link">
+                        <a href="" class="services-link" data-target="frontend">
                             <img src="./img/Front End ic.svg" alt="" class="srv-img" width="24px" height="24px">
                             FrontEnd development</a>
                     </li>
                     <li class="services-item">
-                        <a href="" class="services-link">
+                        <a href="" class="services-link" data-target="backend">
                             <img src="./img/Back-end-ic.svg" alt="" class="srv-img" width="24px" height="24px">
                             BackEnd development</a>
                     </li>
                     <li class="services-item">
-                        <a href="" class="services-link">
+                        <a href="" class="services-link" data-target="mobile-app">
                             <img src="./img/mobile app ic.svg" alt="" class="srv-img" width="24px" height="24px">
                             Mobile App Development</a>
                     </li>
                     <li class="services-item">
-                        <a href="" class="services-link">
+                        <a href="" class="services-link" data-target="UX/UI">
                             <img src="./img/ui ux.svg" alt="" class="srv-img" width="24px" height="24px">
                             UI/UX Design</a>
                     </li>
@@ -126,7 +128,43 @@
                     </li>
                 </ul>
             </div>
-        </div>
+            <div class="services-info" id="frontend" width="540px">
+                <div class="services-img-block-front">
+                    <img src="./img/Group FE.svg" alt="" class="services-info-img">
+                </div>
+                <div class="services-text-block">
+                <h3 class="services-info-tittle">FrontEnd</h3>
+                <p class="services-infotext">A front-end developer builds the front-end<br> portion of websites and web applications — that<br> is, the part that users actually see and interact</p>
+            </div>
+            </div>
+            <div class="services-info" id="backend" width="540px">
+                <div class="services-img-block-back">
+                    <img src="./img/BackEnd-item.svg" alt="" class="services-info-img-1">
+                </div>
+                <div class="services-text-block">
+                <h3 class="services-info-tittle">BackEnd</h3>
+                <p class="services-infotext">Get a seamless product. With extensive experience in diverse programming languages and the latest technologies, our highly qualified experts offer a variety of back-end services to different business verticals.</p>
+            </div>
+            </div>
+            <div class="services-info" id="mobile-app" width="540px">
+                <div class="services-img-block-mobile">
+                    <img src="./img/MobileApp-item.svg" alt="" class="services-info-img-1">
+                </div>
+                <div class="services-text-block">
+                <h3 class="services-info-tittle">Mobile App Development</h3>
+                <p class="services-infotext">Turbo-charge your design and development pipeline and deliver outstanding apps for iOS and Android platforms with unmatched speed and efficiency. Tap into new business opportunities</p>
+            </div>
+            </div>
+            <div class="services-info" id="UX/UI" width="540px">
+                <div class="services-img-block-UXUI">
+                    <img src="./img/Group UIUI.svg" alt="" class="services-info-img">
+                </div>
+                <div class="services-text-block">
+                <h3 class="services-info-tittle">UI/UX Design</h3>
+                <p class="services-infotext">Our experts apply proven approaches to design, prototyping, product validation and offer UI design services to create applications that users enjoy</p>
+            </div>
+            </div>
+            
     </section>
     </div>
     <section class="company">
