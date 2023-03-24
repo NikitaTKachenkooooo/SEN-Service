@@ -116,10 +116,11 @@ body {
 .nav-list-link:focus,
 .nav-list-link:active {
     color: var(--font-color-2);
-    font-size: 19px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 19px;    
     
 }
+
+
 
 
 
@@ -486,7 +487,6 @@ body {
     transition: 0.5s;
     flex-direction: row;
     gap: 24px;
-    
 }
 
 .srv-img {
@@ -512,7 +512,12 @@ body {
     background-image: url(/img/11111111111.svg);
     background-size: contain;
     background-repeat: no-repeat;
+    opacity: 0;
+    transform: translateY(20px);
+    opacity: 0;
 }
+
+
 
 .services-text-block {
     width: 540px;
@@ -577,4 +582,8 @@ body {
     margin-left: 100px;
     margin-top: 32px;
 
+}
+
+.span-color {
+    color: #ED5226;
 }
