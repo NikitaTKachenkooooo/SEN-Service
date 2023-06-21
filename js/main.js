@@ -31,3 +31,19 @@ servicesLinks.forEach(link => {
     });
   });
 });
+
+
+// Получаем все ссылки с классом "company-link"
+const companyLinks = document.querySelectorAll('.company-link');
+
+// Добавляем обработчик событий на каждую ссылку
+companyLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    // Получаем родительский элемент ссылки
+    const parent = link.parentNode;
+    
+    // Получаем картинку с классом "img-company-title" и делаем ее видимой
+    const img = parent.nextElementSibling.querySelector('.img-company-title');
+    img.style.display = 'block';
+  });
+});
